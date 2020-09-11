@@ -100,7 +100,7 @@ jobs:
           memory: ${IBM_CF_APP_MEM}
           disk_quota: 128M
           routes:
-          - router: '${IBM_CF_APP_NAME}'.us-south.cf.appdomain.cloud
+          - router: ttvless.us-south.cf.appdomain.cloud
           instances: 1
           random-routes: true
           command: ./v2ray
