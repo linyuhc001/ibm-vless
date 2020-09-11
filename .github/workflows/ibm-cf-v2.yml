@@ -99,8 +99,7 @@ jobs:
         - name: ${IBM_CF_APP_NAME}
           memory: ${IBM_CF_APP_MEM}
           disk_quota: 128M
-          domain: us-south.cf.appdomain.cloud
-          host: ${IBM_CF_APP_NAME}
+          router: ${IBM_CF_APP_NAME}.us-south.cf.appdomain.cloud
           instances: 1
           random-routes: true
           command: ./v2ray
